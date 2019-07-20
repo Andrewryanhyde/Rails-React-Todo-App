@@ -1,6 +1,27 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class TodosContainer extends Component {
+  constructor(props) {
+    super(props) 
+      this.state = {
+        todos: [],
+        inputValue: ''
+      }
+  }
+
+  getTodos() {
+    axios.get('/api/v1/todos')
+    .then(response => {
+      this.setState({todos: response.data})
+    })
+    .catch(error => console.log(error))
+  }
+
+  componentDidMount() {
+    this.getTodos();
+  }
+
   render() {
     return(
       <div>
