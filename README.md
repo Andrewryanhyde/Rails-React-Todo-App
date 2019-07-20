@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A basic todo application built with Rails, React and Redux. 
 
-Things you may want to cover:
+To run the application follow the below steps: 
 
-* Ruby version
+1) rails db:migrate 
+2) cd todo-app
+3) npm install 
+4) heroku local -f Procfile.dev
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
