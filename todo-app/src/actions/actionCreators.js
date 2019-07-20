@@ -1,4 +1,4 @@
-import { LOAD_TODOS, ADD_TODO, TOGGLE_TODO, DELETE_TODO } from '../actionTypes'
+import { LOAD_TODOS, ADD_TODO, TOGGLE_TODO, DELETE_TODO } from './actionTypes'
 
 export function loadTodos(todos) {
   return { type: LOAD_TODOS, todos: todos }
