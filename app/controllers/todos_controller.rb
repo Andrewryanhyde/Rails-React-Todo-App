@@ -20,4 +20,9 @@ class TodosController < ApplicationController
     todo.destroy 
     head :no_content, status: :ok
   end
+
+  private 
+    def todo_param 
+      params.require(:todo).permit(:title, :done)
+    end
 end
